@@ -59,12 +59,10 @@ namespace Esoft_Project
             {
                 ListViewItem item = new ListViewItem(new string[]
                 {
-                    supply.IdAgent.ToString(),
-                    supply.AgentSet.LastName+" "+supply.AgentSet.FirstName.Remove(1)+"."+supply.AgentSet.MiddleName.Remove(1) + ".",
-                    supply.IdClient.ToString(),
-                    supply.ClientsSet.LastName + " " + supply.ClientsSet.FirstName.Remove(1) + "." + supply.ClientsSet.MiddleName.Remove(1) + ".",
-                    supply.IdRealEstate.ToString(),
-                    "г."+supply.RealEstateSet.Address_City+", ул."+supply.RealEstateSet.Address_Street + ", д."+supply.RealEstateSet.Address_House+", кв."+supply.RealEstateSet.Address_Number, 
+                    supply.Id.ToString(),
+                    supply.IdAgent.ToString() + ". " + supply.AgentSet.LastName+" "+supply.AgentSet.FirstName.Remove(1)+"."+supply.AgentSet.MiddleName.Remove(1) + ".",
+                    supply.IdClient.ToString() + ". " + supply.ClientsSet.LastName + " " + supply.ClientsSet.FirstName.Remove(1) + "." + supply.ClientsSet.MiddleName.Remove(1) + ".",
+                    supply.IdRealEstate.ToString() + ". " + "г."+supply.RealEstateSet.Address_City+", ул."+supply.RealEstateSet.Address_Street + ", д."+supply.RealEstateSet.Address_House+", кв."+supply.RealEstateSet.Address_Number, 
                     supply.Price.ToString()
                 }) ;
                 item.Tag = supply;
@@ -175,7 +173,9 @@ namespace Esoft_Project
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            Form menu = new Menu();
+            menu.Show();
+            this.Hide();
         }
 
         private void labelAgent_Click(object sender, EventArgs e)

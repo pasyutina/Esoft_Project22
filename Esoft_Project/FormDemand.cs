@@ -602,5 +602,12 @@ namespace Esoft_Project
                 e.Handled = true;
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form menu = new Menu();
+            menu.Show();
+            this.Hide();
+        }
     }
 }

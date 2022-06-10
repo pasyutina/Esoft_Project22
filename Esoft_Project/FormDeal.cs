@@ -195,5 +195,12 @@ namespace Esoft_Project
                 MessageBox.Show("Данные невозможно удалить, эта запись используется", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form menu = new Menu();
+            menu.Show();
+            this.Hide();
+        }
     }
 }

@@ -28,36 +28,42 @@ namespace Esoft_Project
         {
             Form formClient = new FormClient();
             formClient.Show();
+            this.Hide();
         }
 
         private void buttonOpenRealEstates_Click(object sender, EventArgs e)
         {
             Form formRealEstate = new FormRealEstate();
             formRealEstate.Show();
+            this.Hide();
         }
 
         private void buttonOpenAgents_Click(object sender, EventArgs e)
         {
             Form formAgent = new FormAgent();
             formAgent.Show();
+            this.Hide();
         }
 
         private void buttonOpenDemands_Click(object sender, EventArgs e)
         {
             Form formSupply = new FormSupply();
             formSupply.Show();
+            this.Hide();
         }
 
         private void buttonOpenSupplies_Click(object sender, EventArgs e)
         {
             Form formDemand = new FormDemand();
             formDemand.Show();
+            this.Hide();
         }
 
         private void buttonOpenDeals_Click(object sender, EventArgs e)
         {
             Form formDeal = new FormDeal();
             formDeal.Show();
+            this.Hide();
         }
 
         private void labelHello_Click(object sender, EventArgs e)
